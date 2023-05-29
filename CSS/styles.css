@@ -55,7 +55,9 @@ h4 {
 p {
     font-size: 1rem;
     font-family: 'Halyard Text', sans-serif;
+    font-weight: 300;
     letter-spacing: 2%;
+    color: white;
 }
 
 #green_text {
@@ -76,6 +78,38 @@ a {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin-top: 2rem;
+    animation: fadeScaleIn 2s ease-in-out;
+}
+
+/* Action button */
+
+#action_button {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    padding: 0.4rem 1rem;
+    align-items: center;
+    border: none;
+    border-radius: 1rem;
+    background-color: #245334;
+    color: #88E892;
+    font-family: 'Halyard Text', sans-serif;
+    font-size: 1rem;
+    transition: 0.2s linear;
+}
+
+#action_button > #dropdown_arrow {
+    transition: 0.2s linear;
+}
+
+#action_button:hover > #dropdown_arrow {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+#action_button:hover {
+    cursor: pointer;
 }
 
 /* Button with icon */
@@ -123,7 +157,13 @@ a {
     align-items: center;
     padding: 30px 50px;
     background-color: #1C1E1F;
+    transition: 0.2s linear;
 }
+
+.navigation_menu_container.scrolled {
+    padding: 10px 20px;
+    background-color: #232627;
+  }
 
 #logo {
     display: flex;
@@ -131,18 +171,30 @@ a {
     gap: 1rem;
 }
 
-#tag {
-    color: #5ABB7A;
-    border: 0.08rem solid #5ABB7A;
-    border-radius: 0.5rem;
-    padding-inline: 0.5rem;
-    font-family: 'Halyard Text', sans-serif;
-    font-size: 0.5rem;
-    font-weight: 400;
-    letter-spacing: 2%;
-    justify-content: center;
+#navigation_elements {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
     align-items: center;
+}
+
+#navigation_elements > li {
+    list-style-type: none;
+    font-family: 'Halyard Text', sans-serif;
+    font-size: 1rem;
+    color: white;
+    transition: 0.2s linear;
+}
+
+#navigation_elements > li:hover {
+    cursor: pointer;
+    color: #88E892;
+    transform: scale(105%);
 } 
+
+#navigation_elements > li:active {
+    transform: scale(102%);
+}
 
 /* ------ HERO BANNER ------ */
 
@@ -161,10 +213,32 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 0rem;
+    animation: fadeScaleIn 2s ease-in-out;
 }
 
 #hero_text_container > h3 {
     margin-top: 1rem;
+}
+
+/* ------ FEATURE SECTION ------ */
+
+.feature_section {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#feature_column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20rem;
 }
 
 /* ------ FOOTER ------ */
@@ -173,7 +247,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
     justify-content: center;
     align-items: center;
     padding-block: 7rem;
@@ -184,4 +258,8 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 3rem;
+}
+
+#logo_section > a > img {
+    height: 3rem;
 }
