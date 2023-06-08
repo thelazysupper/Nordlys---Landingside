@@ -21,7 +21,7 @@ body {
 
 /* ------ TYPOGRAPHY ------ */
 
-/* Font sizes */
+/* Font hierarchy */
 
 h1 {
     font-size: 3rem;
@@ -58,6 +58,7 @@ p {
     font-weight: 300;
     letter-spacing: 2%;
     color: white;
+    opacity: 75%;
 }
 
 #green_text {
@@ -213,7 +214,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 0rem;
-    animation: fadeScaleIn 2s ease-in-out;
+    animation: fadeScaleIn 1.5s ease-in-out;
 }
 
 #hero_text_container > h3 {
@@ -234,11 +235,15 @@ a {
 #feature_column {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.7rem;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 20rem;
+}
+
+#feature_icon {
+    height: 2.5rem;
 }
 
 /* ------ FOOTER ------ */
@@ -257,7 +262,7 @@ footer {
 #logo_section {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 #logo_section > a > img {
