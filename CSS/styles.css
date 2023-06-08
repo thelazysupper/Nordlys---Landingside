@@ -221,6 +221,18 @@ a {
     margin-top: 1rem;
 }
 
+#mockup_animation {
+    width: 100%;
+    padding-inline: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#phone_mockup {
+    width: 100%;
+}
+
 /* ------ FEATURE SECTION ------ */
 
 .feature_section {
@@ -267,4 +279,48 @@ footer {
 
 #logo_section > a > img {
     height: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    
+
+    /* Font hierarchy */
+
+    h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    /* Footer */
+
+    #logo_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    /* Hero banner */
+
+    #mockup_animation {
+        padding-inline: 10%;
+    }
+
+  }
+
+@media only screen and (max-width: 425px) {
+   
+    /* Font hierarchy */
+
+    h1 {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    /* Footer */
+
+    #logo_section {
+        gap: 2rem;
+    }
 }
